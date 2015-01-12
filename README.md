@@ -1,4 +1,4 @@
 # socketio-haxe
 socket.io binding for haxe/javascript
 
-‚©‚«‚©‚¯‚Æ‚¿‚ã‚¤
+ã‹ãã‹ã‘ã¨ã¡ã‚…ã†
