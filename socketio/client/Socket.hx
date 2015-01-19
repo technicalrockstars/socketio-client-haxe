@@ -10,7 +10,7 @@
 		socket io clientの SocketとEmitterのバインド
 		たぶんホントはSocket->Emitterという感じ
 */
-package socketio.Socket;
+package socketio.client.Socket;
 
 class Socket
 {
