@@ -1,0 +1,11 @@
+{
+  "name": "socketio-client-haxe",
+  "url": "",
+  "license": "MIT",
+  "tags": [ "socketio" ],
+  "description": "socketio client binding for haxe",
+  "version": "1.0.0",
+  "releasenote": "",
+  "contributors": [ "yui.k" ],
+  "dependencies": {}
+}

@@ -10,7 +10,7 @@
 		socket io clientの SocketとEmitterのバインド
 		たぶんホントはSocket->Emitterという感じ
 */
-package socketio.client.Socket;
+package socketio.client;
 
 class Socket
 {
@@ -25,7 +25,7 @@ class Socket
 	public function new( url:String = "http://localhost", ?opt:Dynamic ):Void
 	{
 		// なんとかする
-		this.sobj = untyped __js__("io( url, opt )");
+		this.sobj = untyped __js__("io.connect( url, opt )");
 	}
 
 	/**
@@ -66,12 +66,12 @@ class Socket
 	/**
 	 * emitのオーバーライド
 	 * @param	ev	イベント名
-	 * @param	fn	コールバック関数
+	 * @param	d	データ
 	 * @return	これ自身
 	 */
-	public function emit( ev:String, fn:Dynamic->Void ):Socket
+	public function emit( ev:String, d:Dynamic ):Socket
 	{
-		this.sobj.emit( ev, fn );
+		this.sobj.emit( ev, d );
 		return this;
 	}
 
